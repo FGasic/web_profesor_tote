@@ -606,43 +606,49 @@ button { font-family: inherit; }
   margin-left: 0;
 }
 
-/* Engineering paragraph — secondary / credential */
+/* Engineering paragraph — credential, gold, readable */
 .sobre-bio {
   font-family: 'Crimson Text', serif;
-  font-size: 15px;
-  color: var(--text-dim);
-  line-height: 1.7;
+  font-size: 18px;
+  color: var(--gold-light);
+  line-height: 1.8;
   margin-bottom: 24px;
   letter-spacing: 0.01em;
 }
 
-/* Chess/philosophy paragraph — primary, AoE inscription style */
+/* Chess paragraph — AoE lema banner style */
 .sobre-bio-2 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cinzel Decorative', cursive;
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 0.07em;
+  font-style: normal;
+  letter-spacing: 0.08em;
   line-height: 2.0;
   color: var(--gold-light);
-  font-style: normal;
-  margin-bottom: 36px;
-  text-shadow: 0 0 18px rgba(201,152,58,0.25);
+  text-align: center;
+  text-shadow: 0 0 20px rgba(201,152,58,0.55), 0 2px 4px rgba(0,0,0,0.9);
+  background: linear-gradient(135deg, #060E1A 0%, #0C1A2E 30%, #0E2038 50%, #0C1A2E 70%, #060E1A 100%);
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  padding: 20px 52px;
+  margin-bottom: 32px;
   position: relative;
-  padding: 18px 0 18px 18px;
-  border-left: 2px solid var(--gold);
+  box-shadow: 0 0 0 1px rgba(201,152,58,0.12), 0 8px 28px rgba(0,0,0,0.6),
+              inset 0 1px 0 rgba(201,152,58,0.1), inset 0 -1px 0 rgba(201,152,58,0.1);
 }
-.sobre-bio-2::before {
-  content: '♟';
+.sobre-bio-2::before,
+.sobre-bio-2::after {
+  content: '✦';
   position: absolute;
-  left: -10px;
   top: 50%;
   transform: translateY(-50%);
   color: var(--gold);
-  font-size: 16px;
-  background: var(--bg);
-  padding: 2px 0;
-  line-height: 1;
+  font-size: 12px;
+  opacity: 0.8;
+  pointer-events: none;
 }
+.sobre-bio-2::before { left: 18px; }
+.sobre-bio-2::after  { right: 18px; }
 
 /* ─── AoE STATS PANEL (ratings) ─────────────── */
 .ratings-row { margin-top: 4px; }
@@ -695,7 +701,7 @@ button { font-family: inherit; }
 }
 .ratings-sources a {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 0.14em;
   color: var(--text-dim);
   text-transform: uppercase;
