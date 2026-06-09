@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franco Gasic Merino — Clases de Ajedrez en Barcelona</title>
+  <meta name="description" content="Clases de ajedrez de nivel Intermedio-Avanzado en Barcelona y online. Presencial, online (Google Meet + Lichess) y Club de Escacs del Prat.">
+  <meta property="og:title" content="Franco Gasic Merino — Clases de Ajedrez">
+  <meta property="og:description" content="Clases de ajedrez de nivel Intermedio-Avanzado en Barcelona y online.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Analytics 4 — reemplazar G-XXXXXXXXXX con el Measurement ID real -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVEGACIÓN
+  ═══════════════════════════════════════════ -->
+  <nav id="main-nav">
+    <div class="nav-logo">FRANCO GASIC MERINO</div>
+    <ul class="nav-links">
+      <li><a href="#sobre" data-es="Sobre mí" data-en="About">Sobre mí</a></li>
+      <li><a href="#clases" data-es="Clases" data-en="Classes">Clases</a></li>
+      <li><a href="#repertorio" data-es="Repertorio" data-en="Repertoire">Repertorio</a></li>
+      <li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
+    </ul>
+    <button id="lang-toggle" aria-label="Cambiar idioma">EN</button>
+    <button id="menu-toggle" aria-label="Menú" class="hamburger">☰</button>
+  </nav>
+
+  <!-- Mobile nav dropdown -->
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="#sobre" data-es="Sobre mí" data-en="About">Sobre mí</a></li>
+      <li><a href="#clases" data-es="Clases" data-en="Classes">Clases</a></li>
+      <li><a href="#repertorio" data-es="Repertorio" data-en="Repertoire">Repertorio</a></li>
+      <li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="hero">
+
+    <div class="hero-content">
+      <h1 class="hero-name">FRANCO GASIC MERINO</h1>
+      <div class="hero-divider" aria-hidden="true"></div>
+
+      <div class="rating-badges">
+        <span class="rating-badge">● 2275 MÁX. STD.</span>
+        <span class="rating-badge">● 2322 CAT. STD</span>
+        <span class="rating-badge">● 2263 CAT. RAPID</span>
+      </div>
+
+      <div class="hero-lema-wrap">
+        <div class="lema-scroll">
+          Ganar es Abrazar el Acontecer
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#clases" class="btn-primary" data-es="Clases" data-en="Classes">Clases</a>
+        <a href="#contacto" class="btn-outline" data-es="Contacto" data-en="Contact">Contacto</a>
+      </div>
+    </div>
+
+    <!-- Photo ticker — infinite horizontal scroll -->
+    <div class="hero-ticker-wrap" aria-hidden="true">
+      <div class="ticker-track" id="ticker-track">
+        <!-- Populated by JS — photos duplicated for seamless loop -->
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-arrow">↓</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SOBRE MÍ
+  ═══════════════════════════════════════════ -->
+  <section id="sobre" class="section">
+    <div class="section-corner-tl" aria-hidden="true"></div>
+    <div class="section-corner-tr" aria-hidden="true"></div>
+    <div class="section-corner-bl" aria-hidden="true"></div>
+    <div class="section-corner-br" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="sobre-grid">
+        <!-- Foto -->
+        <div class="sobre-photo-wrap reveal">
+          <div class="photo-frame">
+            <img src="images/photo-1.png" alt="Franco Gasic Merino — Entrenador de Ajedrez">
+            <div class="frame-corner frame-tl"></div>
+            <div class="frame-corner frame-tr"></div>
+            <div class="frame-corner frame-bl"></div>
+            <div class="frame-corner frame-br"></div>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="sobre-text reveal">
+          <h2 class="section-title" data-es="Sobre Mí" data-en="About">Sobre Mí</h2>
+          <div class="section-title-line"></div>
+
+          <p class="sobre-bio"
+             data-es="Ingeniero Civil e Ingeniero Electrónico de la Universidad Técnica Federico Santa María, Solutions Architect en SISDEF e IA Engineer en Claude / Microsoft Azure Foundry."
+             data-en="Civil Engineer and Electronic Engineer from Universidad Técnica Federico Santa María, Solutions Architect at SISDEF and AI Engineer at Claude / Microsoft Azure Foundry.">
+            Ingeniero Civil e Ingeniero Electrónico de la Universidad Técnica Federico Santa María, Solutions Architect en SISDEF e IA Engineer en Claude / Microsoft Azure Foundry.
+          </p>
+          <p class="sobre-bio sobre-bio-2"
+             data-es="El Ajedrez es un pilar de mi Eutimia y Ataraxia. Suscita el Autoconocimiento, el Control del Ego, la Tolerancia a la Frustración y el Arte de Pensar."
+             data-en="Chess is a pillar of my Euthymia and Ataraxia. It fosters Self-Knowledge, Ego Control, Tolerance to Frustration, and the Art of Thinking.">
+            El Ajedrez es un pilar de mi Eutimia y Ataraxia. Suscita el Autoconocimiento, el Control del Ego, la Tolerancia a la Frustración y el Arte de Pensar.
+          </p>
+
+          <div class="ratings-row">
+            <div class="ratings-items">
+              <span class="rating-item">
+                <span class="rating-label" data-es="ELO Máx. Standard" data-en="Peak Standard ELO">ELO Máx. Standard</span>
+                <span class="rating-value">2275</span>
+              </span>
+              <span class="rating-sep">|</span>
+              <span class="rating-item">
+                <span class="rating-label" data-es="ELO Cat. Standard" data-en="Cat. Standard ELO">ELO Cat. Standard</span>
+                <span class="rating-value">2322</span>
+              </span>
+              <span class="rating-sep">|</span>
+              <span class="rating-item">
+                <span class="rating-label" data-es="ELO Cat. Rapid" data-en="Cat. Rapid ELO">ELO Cat. Rapid</span>
+                <span class="rating-value">2263</span>
+              </span>
+            </div>
+            <div class="ratings-sources">
+              <a href="https://ratings.fide.com/profile/3414370" target="_blank" rel="noopener noreferrer">FIDE ↗</a>
+              <a href="https://escacs.cat/index.php/component/fce?op=13&idJugador=399856&nom=" target="_blank" rel="noopener noreferrer">Escacs.cat ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider" aria-hidden="true">
+    <span class="divider-line"></span>
+    <span class="divider-ornament">♟</span>
+    <span class="divider-line"></span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       CLASES
+  ═══════════════════════════════════════════ -->
+  <section id="clases" class="section section-alt">
+    <div class="section-corner-tl" aria-hidden="true"></div>
+    <div class="section-corner-tr" aria-hidden="true"></div>
+    <div class="section-corner-bl" aria-hidden="true"></div>
+    <div class="section-corner-br" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title" data-es="Clases" data-en="Classes">Clases</h2>
+        <div class="section-title-line"></div>
+        <p class="section-subtitle" data-es="Nivel Intermedio – Avanzado · Requisito: querer competir" data-en="Intermediate – Advanced · Requirement: competitive drive">
+          Nivel Intermedio – Avanzado · Requisito: querer competir
+        </p>
+      </div>
+
+      <!-- Cards de Modalidad — 2×2 grid -->
+      <div class="clases-cards">
+        <div class="clase-card reveal">
+          <div class="clase-card-icon">♜</div>
+          <h3 class="clase-card-title" data-es="Presencial" data-en="In-Person">Presencial</h3>
+          <p class="clase-card-desc" data-es="Clases en persona, zona de Barcelona" data-en="In-person lessons, Barcelona area">Clases en persona, zona de Barcelona</p>
+        </div>
+        <div class="clase-card reveal">
+          <div class="clase-card-icon">💻</div>
+          <h3 class="clase-card-title" data-es="Online" data-en="Online">Online</h3>
+          <p class="clase-card-desc" data-es="Google Meet + análisis en Lichess" data-en="Google Meet + Lichess analysis">Google Meet + análisis en Lichess</p>
+        </div>
+        <div class="clase-card reveal">
+          <div class="clase-card-icon">♞</div>
+          <h3 class="clase-card-title">Club d'Escacs i Cultura Badia</h3>
+          <p class="clase-card-desc" data-es="Badia del Vallès, Barcelona" data-en="Badia del Vallès, Barcelona">Badia del Vallès, Barcelona</p>
+        </div>
+        <div class="clase-card reveal">
+          <div class="clase-card-icon">♟</div>
+          <h3 class="clase-card-title">Club d'Escacs El Prat</h3>
+          <p class="clase-card-desc" data-es="El Prat de Llobregat, Barcelona" data-en="El Prat de Llobregat, Barcelona">El Prat de Llobregat, Barcelona</p>
+        </div>
+      </div>
+
+      <!-- Tabla de Precios -->
+      <div class="pricing-wrap reveal">
+        <h3 class="pricing-title" data-es="Tarifas" data-en="Pricing">Tarifas</h3>
+        <div class="table-wrap">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th data-es="Tipo" data-en="Type">Tipo</th>
+                <th data-es="1 hora" data-en="1 hour">1 hora</th>
+                <th data-es="2 horas" data-en="2 hours">2 horas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-es="Clase Particular" data-en="Private Lesson">Clase Particular</td>
+                <td class="price">25 €</td>
+                <td class="price">35 €</td>
+              </tr>
+              <tr>
+                <td data-es="Clase Grupal (por alumno)" data-en="Group Lesson (per student)">Clase Grupal (por alumno)</td>
+                <td class="price">10 €</td>
+                <td class="price">15 €</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="pricing-note" data-es="Consulta planes y bonos por mensaje." data-en="Ask about packages and bundles.">Consulta planes y bonos por mensaje.</p>
+      </div>
+
+      <!-- CTA WhatsApp -->
+      <div class="clases-cta reveal">
+        <a href="https://wa.me/34605031692" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+          📱 WhatsApp <span>+34 605 031 692</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DIVISOR LEMA
+  ═══════════════════════════════════════════ -->
+  <div class="lema-divider">
+    <div class="lema-scroll">
+      <span class="corner-burn corner-tl"></span>
+      <span class="corner-burn corner-tr"></span>
+      <span class="corner-burn corner-bl"></span>
+      <span class="corner-burn corner-br"></span>
+      Ganar es Abrazar el Acontecer
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       REPERTORIO
+  ═══════════════════════════════════════════ -->
+  <section id="repertorio" class="section">
+    <div class="section-corner-tl" aria-hidden="true"></div>
+    <div class="section-corner-tr" aria-hidden="true"></div>
+    <div class="section-corner-bl" aria-hidden="true"></div>
+    <div class="section-corner-br" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title" data-es="Repertorio Magistral" data-en="Master Repertoire">Repertorio Magistral</h2>
+        <div class="section-title-line"></div>
+        <p class="section-subtitle" data-es="Las aperturas y defensas que enseño" data-en="The openings and defenses I teach">
+          Las aperturas y defensas que enseño
+        </p>
+      </div>
+
+      <!-- Opening image carousel -->
+      <div class="opening-carousel reveal" id="opening-carousel">
+        <div class="oc-stage">
+          <div class="oc-track" id="oc-track"></div>
+        </div>
+        <button class="oc-btn oc-prev" id="oc-prev" aria-label="Anterior">‹</button>
+        <button class="oc-btn oc-next" id="oc-next" aria-label="Siguiente">›</button>
+        <div class="oc-label" id="oc-label">
+          <span class="oc-side" id="oc-side"></span>
+          <span class="oc-title" id="oc-title"></span>
+        </div>
+        <div class="oc-dots" id="oc-dots"></div>
+      </div>
+
+      <div class="repertorio-grid">
+        <!-- Blancas -->
+        <div class="repertorio-col reveal">
+          <div class="repertorio-col-header">
+            <span class="col-icon">♔</span>
+            <h3 class="repertorio-col-title" data-es="Blancas" data-en="White">Blancas</h3>
+          </div>
+          <div class="openings-list">
+            <span class="opening-badge">The Gasic System</span>
+            <span class="opening-badge">Apertura Catalana</span>
+            <span class="opening-badge">Trompowsky</span>
+            <span class="opening-badge">Sistema Keymer</span>
+          </div>
+        </div>
+
+        <!-- Negras -->
+        <div class="repertorio-col reveal">
+          <div class="repertorio-col-header">
+            <span class="col-icon">♚</span>
+            <h3 class="repertorio-col-title" data-es="Negras" data-en="Black">Negras</h3>
+          </div>
+          <div class="openings-list">
+            <span class="opening-badge">Super Defensa Gasic</span>
+            <span class="opening-badge">Gambito Benko · Gasic</span>
+            <span class="opening-badge">Defensa Alekhine</span>
+            <span class="opening-badge">Siciliana Najdorf</span>
+            <span class="opening-badge">Siciliana Kalashnikov</span>
+            <span class="opening-badge">India de Rey</span>
+            <span class="opening-badge">Grünfeld</span>
+            <span class="opening-badge">Gambito Volga</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider" aria-hidden="true">
+    <span class="divider-line"></span>
+    <span class="divider-ornament">♛</span>
+    <span class="divider-line"></span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACTO
+  ═══════════════════════════════════════════ -->
+  <section id="contacto" class="section section-alt">
+    <div class="section-corner-tl" aria-hidden="true"></div>
+    <div class="section-corner-tr" aria-hidden="true"></div>
+    <div class="section-corner-bl" aria-hidden="true"></div>
+    <div class="section-corner-br" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title" data-es="Contacto" data-en="Contact">Contacto</h2>
+        <div class="section-title-line"></div>
+        <p class="section-subtitle" data-es="¿Listo para llevar tu ajedrez al siguiente nivel?" data-en="Ready to take your chess to the next level?">
+          ¿Listo para llevar tu ajedrez al siguiente nivel?
+        </p>
+      </div>
+
+      <div class="contact-items">
+        <!-- WhatsApp -->
+        <div class="contact-item reveal">
+          <a href="https://wa.me/34605031692" target="_blank" rel="noopener noreferrer" class="btn-whatsapp btn-whatsapp-lg">
+            📱 WhatsApp <span>+34 605 031 692</span>
+          </a>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-item reveal">
+          <div class="email-row">
+            <a href="mailto:francogasic2026@gmail.com" class="contact-email">francogasic2026@gmail.com</a>
+            <button class="btn-copy-email" aria-label="Copiar email" data-es="Copiar" data-en="Copy">Copiar</button>
+          </div>
+        </div>
+
+        <!-- FIDE -->
+        <div class="contact-item reveal">
+          <a href="https://ratings.fide.com/profile/3414370" target="_blank" rel="noopener noreferrer" class="contact-fide" data-es="Ver perfil FIDE ↗" data-en="View FIDE profile ↗">
+            Ver perfil FIDE ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-ornament" aria-hidden="true">
+      <span class="divider-line"></span>
+      <span class="divider-ornament">♛</span>
+      <span class="divider-line"></span>
+    </div>
+    <div class="footer-content">
+      <p class="footer-name">FRANCO GASIC MERINO</p>
+      <p class="footer-lema">♟ Ganar es Abrazar el Acontecer</p>
+      <div class="footer-sep" aria-hidden="true"></div>
+      <p class="footer-copy">© 2025 · francogasic2026@gmail.com · FIDE: 3414370</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
