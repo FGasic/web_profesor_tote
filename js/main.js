@@ -104,14 +104,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const tickerTrack = document.getElementById('ticker-track');
   if (tickerTrack) {
     const tickerPhotos = [
-      'images/photo-6.jpg',
+      'images/photo-6.png',
       'images/photo-0.png',
-      'images/photo-7.jpg',
+      'images/photo-7.png',
       'images/photo-3.png',
-      'images/photo-8.jpg',
+      'images/photo-8.png',
       'images/photo-2.png',
       'images/photo-5.png',
-      'images/photo-9.jpg',
+      'images/photo-9.png',
       'images/photo-4.png',
     ];
 
